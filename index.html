@@ -14,7 +14,7 @@
 </head>
 <body>
     <div id="app">
-        <h1 :class ="{'green': showTime}">{{message}}</h1>
+        <h1 :class ="{[color]: showTime}">{{message}}</h1>
         <p>{{watchTime}}</p>
         <button @click = "watch()">{{btnMessage}}</button> <br>
         <button @click = "img()">{{btnMessageImg}}</button><br>
