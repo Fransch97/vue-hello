@@ -7,7 +7,8 @@ const app = new Vue({
         message :"Hello Vue.js",
         btnMessage: "show time",
         showTime: false,
-        watchTime: ""
+        watchTime: "",
+        green : "green"
     },
 
     methods: {
@@ -16,7 +17,7 @@ const app = new Vue({
                 let h = time.getHours()
                 let m = time.getMinutes()
                 let s = time.getSeconds()
-                const theRealtime = `${(h < 10)? "0" + h: m} : ${(m < 10)? "0" + m: m} : ${(s < 10)? "0" + s : s}`
+                const theRealtime = `${(h < 10)? "0" + h: h} : ${(m < 10)? "0" + m: m} : ${(s < 10)? "0" + s : s}`
                 return theRealtime
         },
 
@@ -38,7 +39,6 @@ const app = new Vue({
                 clearInterval(this.watchRealtime)
                 this.watchTime = ""
                 this.btnMessage = "show time"
-
             }
                 
 
