@@ -17,7 +17,7 @@
         <h1 :class ="{'green': showTime}">{{message}}</h1>
         <p>{{watchTime}}</p>
         <button @click = "watch()">{{btnMessage}}</button> <br>
-        <img :src="url" alt=""><br>
+        <img :src="{'url': showImg }" alt=""><br>
         <button @click = "img()">{{btnMessageImg}}</button>
     </div>
     <script src="script.js"></script>

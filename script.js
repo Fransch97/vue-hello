@@ -44,11 +44,16 @@ const app = new Vue({
                 this.btnMessage = "show time"
             }
         },
-        // showImg(){
-        //     if(this.showImg === false){
+        img(){
+            if(this.showImg === false){
+                this.showImg = true
+                this.btnMessageImg = "hide image"
 
-        //     }
-        // }
+            }else{
+                this.showImg = false
+                this.btnMessageImg = "show image"
+            }
+        }
     },
 }
 )
