@@ -16,7 +16,9 @@
     <div id="app">
         <h1 :class ="{'green': showTime}">{{message}}</h1>
         <p>{{watchTime}}</p>
-        <button @click = "watch()">{{btnMessage}}</button>
+        <button @click = "watch()">{{btnMessage}}</button> <br>
+        <img :src="url" alt=""><br>
+        <button @click = "img()">{{btnMessageImg}}</button>
     </div>
     <script src="script.js"></script>
 </body>

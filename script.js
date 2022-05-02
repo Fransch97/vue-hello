@@ -8,7 +8,10 @@ const app = new Vue({
         btnMessage: "show time",
         showTime: false,
         watchTime: "",
-        green : "green"
+        green : "green",
+        url: "img/no-img6.jpg",
+        showImg : false,
+        btnMessageImg: "show img"
     },
 
     methods: {
@@ -40,10 +43,12 @@ const app = new Vue({
                 this.watchTime = ""
                 this.btnMessage = "show time"
             }
-                
+        },
+        // showImg(){
+        //     if(this.showImg === false){
 
-           
-        }
+        //     }
+        // }
     },
 }
 )
